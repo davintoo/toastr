@@ -13,7 +13,7 @@
 /* global define */
 (function (define) {
     define(['jquery'], function ($) {
-        return (function () {
+        return window.toastr = (function () {//dirty fix for system.js
             var $container;
             var listener;
             var toastId = 0;
